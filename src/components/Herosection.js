@@ -66,7 +66,7 @@ const Hero = () => {
                         <div className="flex flex-row bg-white w-[370px] text-black p-3 text-center justify-center rounded-full">
                             <img src="/google.png" alt="Google" width={80} height={80} className="mr-2" />
                             <span className="text-yellow-500 text-xl md:text-2xl lg:text-2xl">★ ★ ★ ★ ★</span>
-                            <div className="row text-lg md:text-xl font-medium px-2 pb-3 md:pb-0">{rating && userRatingsTotal && ({rating} )} 4.8/5 stars</div>
+                            <div className="row text-lg md:text-xl font-medium px-2 mb-3">{rating && userRatingsTotal && ({rating} )} 4.8/5 stars</div>
                         </div>
                         </a>
                     </div>
