@@ -41,7 +41,7 @@ const Hero = () => {
     return (
         <section className="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 pt-20 text-white mt-5 lg:mt-20" style={{ backgroundColor: '#0890F1' }}>
             <div className="flex-1 lg:pr-12 order-2 lg:order-1">
-                <h1 className="text-4xl lg:text-7xl font-bold mb-6 text-white">
+                <h1 className="text-4xl lg:text-7xl font-bold px-5 md:px-0 mb-6 text-white">
                     Premium <br />
                     Laundry & dry cleaning
                 </h1>
@@ -52,7 +52,7 @@ const Hero = () => {
                                 <div className="mb-4">
                                     <img src={feature.icon} alt={feature.title} width={70} height={70} />
                                 </div>
-                                <div className="text-[10px] md:text-xl font-bold px-2">{feature.title}</div>
+                                <div className="text-[10px] md:text-xl font-bold px-2 ">{feature.title}</div>
                             </div>
                             {index < features.length - 1 && (
                                 <div className='border-white border-r border-[1px] h-[80px] my-auto opacity-50'></div>
