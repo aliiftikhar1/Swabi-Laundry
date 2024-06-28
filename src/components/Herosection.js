@@ -61,12 +61,12 @@ const Hero = () => {
                     ))}
                 </div>
                 
-                    <div className="flex flex-col mt-10 ">
+                    <div className="flex flex-col mt-10 p-3 ">
                         <a href="https://www.google.com/search?q=Swabi+Laundry+and+Dry+Cleaning+Service&rlz=1C1GCEA_enIN1039IN1039&oq=swabi+laundry&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MgYIBBBFGD0yBggFEEUYPTIGCAYQRRg80gEIMzUyNmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">
                         <div className="flex flex-row bg-white w-[370px] text-black p-3 text-center justify-center rounded-full">
                             <img src="/google.png" alt="Google" width={80} height={80} className="mr-2" />
                             <span className="text-yellow-500 text-xl md:text-2xl lg:text-2xl">★ ★ ★ ★ ★</span>
-                            <div className="row text-lg md:text-xl font-medium px-2 mb-3">{rating && userRatingsTotal && ({rating} )} 4.8/5 stars</div>
+                            <div className="row text-lg md:text-xl font-medium px-2">{rating && userRatingsTotal && ({rating} )} 4.8/5 stars</div>
                         </div>
                         </a>
                     </div>
