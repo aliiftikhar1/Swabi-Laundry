@@ -38,13 +38,13 @@ const DesktopNavbar = () => {
         </Link>
         
       </div>
-      <div className="flex items-center space-x-1 px-7">
+      <div className="flex items-center space-x-1 ">
         <div>
           <img src='/whatsappicon.png' width={70}></img>
         </div>
-        <div className=' flex flex-col'>
-        <Link href="https://wa.me/971589920080" target="_blank" rel="noopener noreferrer" className="text-left text-md">
-        Schedule a <br></br>free pickup now
+        <div className=' flex flex-col w-[220px]'>
+        <Link href="https://wa.me/971589920080" target="_blank" rel="noopener noreferrer" className=" text-left text-md">
+        Schedule a free pickup now
         <br></br>
         +971 58 9920080
         </Link>

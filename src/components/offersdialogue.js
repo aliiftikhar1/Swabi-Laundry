@@ -72,9 +72,9 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
         >
           <FaTimes size={24} />
         </button>
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
+        <div className="w-full md:w-1/2 mb-4 md:mb-0 ">
           <img
-            src="/van.jpeg"
+            src="/simplevanimage.png"
             alt="DipDap Van"
             className="rounded-lg w-full h-auto max-h-60 md:max-h-full"
           />

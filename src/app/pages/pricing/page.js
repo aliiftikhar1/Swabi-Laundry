@@ -33,7 +33,6 @@ export default function Home() {
         align="left"
       />
       
-      <ContactComponent/>
       <FAQSection/>
       <AboveFooter/>
       

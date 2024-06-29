@@ -73,7 +73,7 @@ const Hero = () => {
                
             </div>
             <div className="flex-1 lg:mt-0 order-1 lg:order-2 py-[20px]">
-                <img src="/herosectionicon/swabiherosectionimage.png" alt="Hero Image" className="w-full rounded-xl" height={20} />
+                <img src="/launryimageherosection.png" alt="Hero Image" className="w-full rounded-xl" height={20} />
             </div>
         </section>
     );
