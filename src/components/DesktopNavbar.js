@@ -42,7 +42,7 @@ const DesktopNavbar = () => {
         <div>
           <img src='/whatsappicon.png' width={70}></img>
         </div>
-        <div className=' flex flex-col w-[320px]'>
+        <div className=' flex flex-col w-[220px]'>
         <Link href="https://wa.me/971589920080" target="_blank" rel="noopener noreferrer" className=" text-left text-md">
         Schedule a free pickup now
         <br></br>
