@@ -1,12 +1,10 @@
 // components/WhatsAppButton.js
 import { FaWhatsapp } from 'react-icons/fa';
-import Link from 'next/link';
+
 export default function WhatsAppButton() {
-  return (
-    <Link href="https://wa.me/971589920080" target="_blank" rel="noopener noreferrer" 
-      className="fixed bottom-4 right-4 w-16 h-16 bg-green-500 rounded-full shadow-lg flex items-center justify-center z-50 text-white text-3xl"
-    >
+  return (    
+  <a href="https://wa.me/971589920080" target="_blank"  className="fixed bottom-4 right-4 w-16 h-16 bg-green-500 rounded-full shadow-lg flex items-center justify-center z-50 text-white text-3xl">
       <FaWhatsapp />
-    </Link>
+    </a>
   );
 }
