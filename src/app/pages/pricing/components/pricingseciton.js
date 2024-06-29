@@ -1,5 +1,3 @@
-// components/PricingSection.js
-
 import React from 'react';
 import { ArrowRight } from 'react-feather';
 
@@ -65,8 +63,7 @@ const pricingData = [
     pressOnly: 'AED 5',
     cleanAndPress: 'AED 10',
     items: [
-      ['Shirt', 'Blouse', 'T-Shirt', 'Waist coat', 'Ghatra'],
-      ['Trouser', 'Jeans', 'Skirt', 'Cardigan', 'Pyjama', 'Leggings']
+      ['Shirt', 'Blouse', 'T-Shirt', 'Waist coat', 'Ghatra','Trouser', 'Jeans', 'Skirt', 'Cardigan', 'Pyjama', 'Leggings']
     ]
   },
   {
@@ -90,8 +87,7 @@ const pricingData = [
     pressOnly: 'AED 2',
     cleanAndPress: 'AED 4',
     items: [
-      ['Brassiere', 'Undershirt', 'Handkerchief', 'Tie', 'Slacks', 'Stockings'],
-      ['Scarf', 'Underwear', 'Swimwear']
+      ['Brassiere', 'Undershirt', 'Handkerchief', 'Tie', 'Slacks', 'Stockings','Scarf', 'Underwear', 'Swimwear']
     ]
   },
   {
@@ -99,8 +95,7 @@ const pricingData = [
     pressOnly: 'Starts from AED 7',
     cleanAndPress: 'Starts from AED 15',
     items: [
-      ['Abaya', 'Dish Dash', 'Kandoura', 'Ethnic wear (1-2 pcs)', 'Party Dress'],
-      ['Cocktail Gown', 'Salwar Suit (1-3 pcs)', 'Saree (1-3 pcs)', 'Sherwani (1-3 pcs)']
+      ['Abaya', 'Dish Dash', 'Kandoura', 'Ethnic wear (1-2 pcs)', 'Party Dress','Cocktail Gown', 'Salwar Suit (1-3 pcs)', 'Saree (1-3 pcs)', 'Sherwani (1-3 pcs)']
     ]
   },
   {
@@ -108,8 +103,7 @@ const pricingData = [
     pressOnly: 'Itemized pricing applicable',
     cleanAndPress: '',
     items: [
-      ['Carpet', 'Curtains', 'Blanket', 'Duvet', 'Bed sheet'],
-      ['Towel', 'Table Mat', 'Bath robe', 'Table Cloth', 'Pillows', 'Pillow Case']
+      ['Carpet', 'Curtains', 'Blanket', 'Duvet', 'Bed sheet','Towel', 'Table Mat', 'Bath robe', 'Table Cloth', 'Pillows', 'Pillow Case']
     ]
   }
 ];
@@ -137,29 +131,26 @@ const PricingSection = () => {
             <div key={index} className="bg-white rounded-lg shadow-lg p-4 md:p-6 flex flex-col justify-between transform transition-transform hover:scale-105 hover:bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200">
               <div>
                 <div className="border-b-2 pb-2 mb-2">
-                  <h3 className="text-lg font-bold">{category.title}</h3>
-                  <p className="mt-1">Press Only: {category.pressOnly}</p>
-                  {category.cleanAndPress && <p>Clean &amp; Press: {category.cleanAndPress}</p>}
+                  <h3 className="text-xl md:text-2xl font-bold">{category.title}</h3>
+                  <p className="text-gray-500">{category.pressOnly && `Press Only: ${category.pressOnly}`}</p>
+                  <p className="text-gray-500">{category.cleanAndPress && `Clean & Press: ${category.cleanAndPress}`}</p>
                 </div>
-                <div className="flex flex-wrap ">
-                  {category.items.map((group, i) => (
-                    <div key={i} className="w-full ">
-                      <ul className="list-disc ml-4 ">
-                        {group.map((item, j) => (
-                          <li key={j} className="mt-1 flex items-center  p-1">
-                            <img src={iconMap[item]} alt={item} className="w-8 h-8 mr-2 " />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                <div className="flex flex-wrap">
+                  {category.items.map((sublist, subIndex) => (
+                    <ul key={subIndex} className="w-full mb-4">
+                      {sublist.map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-center mb-2">
+                          <img src={iconMap[item]} alt={item} className="w-10 h-10 mr-2 p-[2px] filter filter-customBlue hover:filter-none" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   ))}
                 </div>
               </div>
-              <div className="mt-4 md:mt-6">
-                <button className="inline-flex items-center justify-center w-full px-4 md:px-6 py-2 md:py-3 text-white bg-green-500 hover:bg-green-600 rounded-lg shadow-md hover:shadow-lg transition">
-                  <span>Order Now</span>
-                  <span className="ml-1 md:ml-2"><ArrowRight /></span>
+              <div className="text-center mt-4">
+                <button className="bg-blue-600 text-white flex justify-center mx-auto px-4 py-2 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50 rounded-lg">
+                  Order Now <ArrowRight className="ml-2" />
                 </button>
               </div>
             </div>
@@ -171,4 +162,3 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
-

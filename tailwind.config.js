@@ -9,13 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
-  },
-  theme: {
-    extend: {
       animation: {
         'slide-left': 'slide-left 15s linear infinite',
       },
@@ -25,7 +20,17 @@ module.exports = {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+      filter: {
+        'customBlue': 'invert(45%) sepia(100%) saturate(7000%) hue-rotate(182deg) brightness(94%) contrast(92%)',
+      },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      filter: ['hover'],
+    },
+  },
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 };
