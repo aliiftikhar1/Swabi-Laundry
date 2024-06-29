@@ -1,6 +1,6 @@
 // components/WhatsAppButton.js
 import { FaWhatsapp } from 'react-icons/fa';
-
+import Link from 'next/link';
 export default function WhatsAppButton() {
   return (
     <Link href="https://wa.me/971589920080" target="_blank" rel="noopener noreferrer" 
