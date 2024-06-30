@@ -58,21 +58,11 @@ const FAQ = () => {
                 <span className="ml-4 text-lg font-medium">{faq.question}</span>
               </div>
               <div className={`overflow-hidden transition-all max-h-screen ${activeIndex === index ? 'block' : 'hidden'}`}>
-                <p className="mt-4 text-gray-700">{faq.answer}</p>
+                <p className="mt-4 ml-10 text-gray-700">{faq.answer}</p>
               </div>
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="text-center mb-10">
-        <a 
-          href="#" 
-          className="text-blue-500 font-bold"
-          onClick={(e) => { e.preventDefault(); document.getElementById('landingFaqCTA').scrollIntoView({ behavior: 'smooth' }); }}
-        >
-          Visit our help centre
-        </a>
       </div>
     </div>
   );

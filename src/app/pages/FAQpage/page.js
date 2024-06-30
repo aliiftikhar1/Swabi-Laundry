@@ -14,6 +14,7 @@ export default function Home(){
         <Navbar/>
         <FAQTag/>
         <FAQ/>
+        <br></br>
         <AboveFooter/>
         </>
     )

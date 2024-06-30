@@ -5,7 +5,7 @@ import React from 'react';
 
 const AboveFooter = () => {
   return (
-    <div className="container mx-auto px-8 lg:px-20 py-8">
+    <div className="container mt-[50px] px-8 lg:px-20 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="text-left">
           <div className="space-y-4 pt-4">
@@ -70,7 +70,6 @@ const AboveFooter = () => {
         </div>
       </div>
       </div>
-  
   );
 };
 

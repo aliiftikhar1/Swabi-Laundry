@@ -110,21 +110,17 @@ const pricingData = [
 
 const PricingSection = () => {
   return (
-    <div className="bg-gray-100 p-5 md:p-20">
+    <div className="bg-gray-100 p-5 md:p-20 mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
           <span className="text-pink-600 bg-pink-200 px-4 py-1 rounded">No 1 Laundry Service In Dubai</span>
           <h2 className="text-3xl md:text-4xl font-bold underline mt-4">
-            Affordable <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">Laundry Pricing</span>
+            Fair Pricing<span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text"> Guaranteed</span>
           </h2>
-          <p className="mt-4">Your search for "Dry cleaners and Laundry service near me" ends here.</p>
-          <h3 className="text-xl md:text-2xl mt-4 font-bold">Can you beat that?</h3>
-          <p className="mt-4">
-            We have <strong>clubbed</strong> your daily laundry items into <strong>6 categories</strong> to
-            provide you with easy to navigate and pocket-friendly price options.
-          </p>
-          <p className="mt-4"><strong>Pay a flat rate</strong> for all the items within your favorite category.</p>
-          <p className="mt-4">Our minimum order value is AED 50. We are proud to inform that <strong>we don’t charge service fees</strong> or any other hidden fees.</p>
+          <p className="mt-2 text-lg">We will match your current laundry bill and offer 10% lower prices. Our missing is to offer you the best price without compromising quality and service.</p>
+          <p className="mt-2 text-lg">We have <strong>clubbed</strong> your daily laundry items into <strong>6 categories</strong> to provide you with easy to navigate and pocket-friendly price options.</p>
+          <p className="mt-2 text-lg"><strong>Pay a flat rate</strong> for all the items within your favorite category.</p>
+          <p className="mt-2 text-lg">Our minimum order value is AED 50. We are proud to inform that <strong>we don’t charge service fees</strong> or any other hidden fees.</p>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {pricingData.map((category, index) => (
@@ -136,22 +132,39 @@ const PricingSection = () => {
                   <p className="text-gray-500">{category.cleanAndPress && `Clean & Press: ${category.cleanAndPress}`}</p>
                 </div>
                 <div className="flex flex-wrap">
-                  {category.items.map((sublist, subIndex) => (
-                    <ul key={subIndex} className="w-full mb-4">
-                      {sublist.map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex items-center mb-2">
-                          <img src={iconMap[item]} alt={item} className="w-10 h-10 mr-2 p-[2px] filter filter-customBlue hover:filter-none" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  ))}
+                  {category.items.map((sublist, subIndex) => {
+                    const half = Math.ceil(sublist.length / 2);
+                    const firstHalf = sublist.slice(0, half);
+                    const secondHalf = sublist.slice(half);
+                    return (
+                      <div key={subIndex} className="w-full mb-4 flex flex-wrap">
+                        <ul className="w-1/2">
+                          {firstHalf.map((item, itemIndex) => (
+                            <li key={itemIndex} className="flex items-center mb-2 text-sm">
+                              <img src={iconMap[item]} alt={item} className="w-8 h-8 mr-2 p-[2px] filter filter-customBlue hover:filter-none" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <ul className="w-1/2">
+                          {secondHalf.map((item, itemIndex) => (
+                            <li key={itemIndex} className="flex items-center mb-2 text-sm">
+                              <img src={iconMap[item]} alt={item} className="w-8 h-8 mr-2 p-[2px] filter filter-customBlue hover:filter-none" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <div className="text-center mt-4">
-                <button className="bg-blue-600 text-white flex justify-center mx-auto px-4 py-2 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50 rounded-lg">
+              <a href="https://wa.me/971589920080" target="_blank">
+                <button className="bg-blue-600 text-white flex justify-center mx-auto px-4 py-2 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50 rounded-lg">
                   Order Now <ArrowRight className="ml-2" />
                 </button>
+                </a>
               </div>
             </div>
           ))}

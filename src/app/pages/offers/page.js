@@ -71,6 +71,7 @@ export default function Home() {
                     />
                 </div>
             </div>
+            <br></br>
             <AboveFooter />
         </>
     )

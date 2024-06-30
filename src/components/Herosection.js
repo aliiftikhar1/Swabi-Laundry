@@ -25,34 +25,35 @@ const Hero = () => {
             title: 'Free Pickup and Delivery',
         },
         {
-            icon: '/herosectionicon/medal (1).png',
-            title: '100% Guaranteed',
+            icon: '/herosectionicon/courier-services.png',
+            title: 'Express Service',
         },
         {
-            icon: '/herosectionicon/credit-card (1).png',
-            title: 'Competitive Price',
+            icon: '/herosectionicon/faitprice.png',
+            title: 'Fair Pricing',
         },
         {
-            icon: '/herosectionicon/microphone (1).png',
-            title: 'Customer Care Support',
+            icon: '/herosectionicon/multiplepayment.png',
+            title: 'Multiple Payment Channels',
         },
     ];
 
     return (
-        <section className="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 pt-20 text-white mt-5 lg:mt-20" style={{ backgroundColor: '#0890F1' }}>
-            <div className="flex-1 lg:pr-12 order-2 lg:order-1">
-                <h1 className="text-4xl lg:text-7xl font-bold px-5 md:px-0 mb-6 text-white">
-                    Premium <br />
-                    Laundry & dry cleaning
+        <section className="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 pt-10 text-white mt-5 lg:mt-[110px]" style={{ backgroundColor: '#0890F1' }}>
+            <div className="flex-1 lg:pr-12  order-2 lg:order-1 pb-4 ">
+                <h1 className="py-2 md:px-0 mb-2 text-white pl-4">
+               <span className='text-4xl font-bold lg:text-7xl '> Swabi Laundry </span><br />
+               <span className='text-2xl font-semibold lg:text-4xl'>Premium Laundry & Dry Cleaning </span><br/>
+               <span className='text-xl font-normal text-center lg:text-2xl'> Clean. Anywhere. Anytime. </span>
                 </h1>
-                <div className='bg-opacity-80 flex rounded pr-2 mt-[30px]'>
+                <div className='bg-opacity-80 flex rounded pr-2'>
                     {features.map((feature, index) => (
                         <div key={index} className="flex items-center">
-                            <div className="flex flex-col w-full items-center text-center text-white">
-                                <div className="mb-4">
-                                    <img src={feature.icon} alt={feature.title} width={70} height={70} />
+                            <div className="flex flex-col items-center md:w-[200px] w-[120px] text-center text-white">
+                                <div className="mb-2 ">
+                                    <img src={feature.icon} alt={feature.title} className='w-[50px] h-[50px] md:w-[70px] md:h-[70px]' />
                                 </div>
-                                <div className="text-[10px] md:text-xl font-bold px-2 ">{feature.title}</div>
+                                <div className="text-[10px] md:text-lg px-2 font-semibold ">{feature.title}</div>
                             </div>
                             {index < features.length - 1 && (
                                 <div className='border-white border-r border-[1px] h-[80px] my-auto opacity-50'></div>
@@ -61,19 +62,19 @@ const Hero = () => {
                     ))}
                 </div>
                 
-                    <div className="flex flex-col mt-10 pb-3 md:pb-0">
+                    <div className="flex flex-col mt-3  pl-4 md:pl-0 ">
                         <a href="https://www.google.com/search?q=Swabi+Laundry+and+Dry+Cleaning+Service&rlz=1C1GCEA_enIN1039IN1039&oq=swabi+laundry&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MgYIBBBFGD0yBggFEEUYPTIGCAYQRRg80gEIMzUyNmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">
-                        <div className="flex flex-row bg-white w-[370px] text-black p-3 text-center justify-center rounded-full">
-                            <img src="/google.png" alt="Google" width={80} height={80} className="mr-2" />
+                        <div className="flex flex-row bg-white md:w-[360px] w-[330px] text-black md:p-3 p-2 text-center justify-center rounded-full">
+                            <img src="/google1.png" alt="Google" width={80} className="mr-2 object-contain" />
                             <span className="text-yellow-500 text-xl md:text-2xl lg:text-2xl">★ ★ ★ ★ ★</span>
-                            <div className="row text-lg md:text-xl font-medium px-2">{rating && userRatingsTotal && ({rating} )} 4.8/5 stars</div>
+                            <div className="row md:text-xl text-md font-medium px-2">{rating && userRatingsTotal && ({rating} )} 4.8/5 stars</div>
                         </div>
                         </a>
                     </div>
                
             </div>
-            <div className="flex-1 lg:mt-0 order-1 lg:order-2 py-[20px]">
-                <img src="/launryimageherosection.png" alt="Hero Image" className="w-full rounded-xl" height={20} />
+            <div className="flex-1 lg:mt-0 order-1 lg:order-2 pt-[10px]">
+                <img src="/laundryman.png" alt="Hero Image" className="rounded-xl md:h-[400px] md:w-[700px] object-contain"  />
             </div>
         </section>
     );

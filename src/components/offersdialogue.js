@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaTimes } from 'react-icons/fa';
+import 'tailwindcss/tailwind.css';
 
 const OfferDialog = ({ googleMapsUrl, locationName }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -64,47 +65,50 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 w-full h-full flex items-center justify-center z-50 bg-gray-800 bg-opacity-75">
-      <div className="relative flex flex-col md:flex-row items-center p-4 md:p-6 bg-white shadow-lg rounded-lg w-11/12 max-w-3xl mx-auto md:h-auto h-auto md:h-90">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
+      <div className="relative bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out w-full max-w-4xl mx-4">
         <button
           onClick={handleClose}
-          className="absolute top-3 right-3 text-white bg-red-500 rounded-full p-1 hover:text-gray-700"
+          className="absolute top-4 right-4 text-gray-700 hover:text-gray-900 transition-colors duration-300"
         >
           <FaTimes size={24} />
         </button>
-        <div className="w-full md:w-1/2 mb-4 md:mb-0 ">
-          <img
-            src="/simplevanimage.png"
-            alt="DipDap Van"
-            className="rounded-lg w-full h-auto max-h-60 md:max-h-full"
-          />
-        </div>
-        <div className="w-full md:w-1/2 text-center md:text-left md:pl-6">
-          <div className="flex flex-col items-center md:items-start md:mb-2">
-            <img src='/google.png' width={150} height={150} alt="Google Logo" className="mb-2 md:mb-0" />
-            <div className="flex items-center">
-              <span className="text-yellow-500 text-xl md:text-2xl lg:text-4xl">★ ★ ★ ★ ★</span>
-              <span className="ml-2 text-lg md:text-xl lg:text-2xl text-gray-700">
-                {rating !== null ? `${rating} STAR` : 'Loading...'}
-              </span>
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 h-64 md:h-auto">
+            <img
+              src="/simplevanimage.png"
+              alt="Swabi Laundry Van"
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="w-full md:w-1/2 flex flex-col justify-center p-8">
+            <div className="flex flex-col items-center md:items-start mb-4">
+              <img src='/google.png' width={100} height={100} alt="Google Logo" className="mb-2" />
+              <div className="flex items-center">
+                <span className="text-yellow-500 text-2xl md:text-3xl lg:text-4xl">★ ★ ★ ★ ★</span>
+                <span className="ml-2 text-xl md:text-2xl lg:text-3xl text-gray-700">
+                  {rating !== null ? `${rating} STAR` : 'Loading...'}
+                </span>
+              </div>
             </div>
-          </div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg">CUSTOMER RATING</p>
-          <div className="md:mt-4">
-            <p className="text-green-500 font-semibold text-lg md:text-xl">Free Pick Up & Delivery</p>
-            <p className="text-gray-700 text-sm md:text-base">20% off for the 1st 3 orders</p>
-            <p className="text-gray-700 text-sm md:text-base">No Hidden Cost</p>
-          </div>
-          <div className="md:mt-4 flex md:flex-row items-center md:items-start md:justify-start">
-            <a
-              href="tel:+971585927959"
-              className="block w-full md:w-auto text-sm md:text-md bg-green-500 text-white font-bold py-2 md:py-2 px-1 md:px-4 rounded m-1 mb-2 md:mb-0 md:mr-2 md:m-0 text-center"
-            >
-              +971-585927959
-            </a>
-            <button className="block w-full md:w-auto text-sm md:text-md bg-green-500 text-white font-bold py-2 px-4 m-1 mb-2 md:mb-0 md:mr-2 md:m-0 rounded text-center">
-              Order Now
-            </button>
+            <p className="text-gray-600 text-base md:text-lg lg:text-xl mb-4">CUSTOMER RATING</p>
+            <div className="mb-4">
+              <p className="text-green-600 font-semibold text-lg md:text-xl">Free Pickup & Delivery</p>
+              <p className="text-gray-700 text-base md:text-lg">20% off on your first 3 orders</p>
+              <p className="text-gray-700 text-base md:text-lg">No Hidden Costs</p>
+              <p className="text-gray-700 text-base md:text-lg">Quick and Reliable Service</p>
+            </div>
+            <div className="flex flex-col md:flex-row items-center md:items-start">
+              <a
+                href="tel:+971585927959"
+                className="w-full md:w-auto text-base bg-gradient-to-r from-green-400 to-green-500 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0 md:mr-2 text-center hover:from-green-500 hover:to-green-600 transition-all duration-300"
+              >
+                +971-585927959
+              </a>
+              <button className="w-full md:w-auto text-base bg-gradient-to-r from-blue-400 to-blue-500 text-white font-bold py-2 px-4 rounded text-center hover:from-blue-500 hover:to-blue-600 transition-all duration-300">
+                Order Now
+              </button>
+            </div>
           </div>
         </div>
       </div>

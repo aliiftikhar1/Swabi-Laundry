@@ -19,20 +19,8 @@ export default function Home() {
       <title>Swabi Laundry | Home</title>
     </Head>
       <Navbar />
-      <Tag />
+      {/* <Tag /> */}
       <PricingSection/>
-      <LaundryInfo />
-      <Productpropcomponent
-        benefit="Best Laundry Discount"
-        image="/laundrydiscount.avif"
-        imageWidth="100%"  // Specify the width of the image as 50%
-        title="A laundry service designed for you"
-        description1="Never worry about staining your favourite shirt. We offer laundry, dry cleaning and ironing at a schedule that fits your lifestyle."
-        description2="Best Laundry service provider in Dubai"  // Add empty strings for other descriptions if not used
-        description3=""  // Add empty strings for other descriptions if not used
-        align="left"
-      />
-      
       <FAQSection/>
       <AboveFooter/>
       
