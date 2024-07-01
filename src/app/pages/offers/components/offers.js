@@ -1,5 +1,5 @@
 // components/Offers.js
-
+'use client'
 import { useState, useEffect } from 'react';
 
 const Offers = () => {

@@ -1,5 +1,4 @@
 // pages/index.js
-'use client'
 import About from "@/components/about";
 import AboveFooter from "@/components/abovefooter";
 import Benefits from "@/components/Benefits";
@@ -13,16 +12,14 @@ import ReviewStrip from "@/components/Strip";
 import Testimonials from "@/components/testimonial";
 import WhatsAppButton from "@/components/whatsappbutton";
 
+export const metadata = {
+  title: "Swabi Laundry | Home",
+  description: "Home Page of Swabi Laundry",
+};
+
 export default function Home() {
   return (
-    <div className="w-full">
-      <OfferDialog 
-        googleMapsUrl="https://maps.app.goo.gl/owFNrAMn1L1z8WJHA" // Replace with your actual Google Maps URL
-        locationName="Swabi Laundry and Dry Cleaning Service"
-        
-      />
-      <WhatsAppButton />
-      <Navbar />
+    <div className="w-full">  
       <Hero />
       <LaundryServices/>
       <ReviewStrip />

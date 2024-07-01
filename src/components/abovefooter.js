@@ -17,10 +17,10 @@ const AboveFooter = () => {
         <div className="text-left">
           <h5 className="text-xl font-semibold mb-4">Our Services</h5>
           <div className="space-y-2">
-          <a href="#" className="text-body-main block">Wash and Fold Service</a>
-          <a href="#" className="text-body-main block">Dry Cleaning</a>
-          <a href="#" className="text-body-main block">Ironing/Pressing</a>
-          <a href="#" className="text-body-main block">Stain Removal</a>
+          <a href="" className="text-body-main block">Wash and Fold Service</a>
+          <a href="" className="text-body-main block">Dry Cleaning</a>
+          <a href="" className="text-body-main block">Ironing/Pressing</a>
+          <a href="" className="text-body-main block">Stain Removal</a>
           </div>
         </div>
 

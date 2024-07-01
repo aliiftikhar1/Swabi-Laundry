@@ -1,18 +1,15 @@
-'use client'
 import React from "react";
-import Navbar from "@/components/Header";
 import FAQSection from "./components/FAQsection";
 import PricingSection from "./components/pricingseciton";
 import AboveFooter from "@/components/abovefooter";
+export const metadata = {
+  title: "Swabi Laundry | Pricing",
+  description: "Pricing page of swabi laundry",
+};
 
-import Head from "next/head";
 export default function Home() {
   return (
     <>
-    <Head>
-      <title>Swabi Laundry | Home</title>
-    </Head>
-      <Navbar />
       {/* <Tag /> */}
       <PricingSection/>
       <FAQSection/>

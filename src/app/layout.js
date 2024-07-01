@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Header";
+import WhatsAppButton from "@/components/whatsappbutton";
+import OfferDialog from "@/components/offersdialogue";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <div className="fixed-navbar ">
+          <Navbar />
+          <WhatsAppButton />
+          <OfferDialog 
+        googleMapsUrl="https://maps.app.goo.gl/owFNrAMn1L1z8WJHA" // Replace with your actual Google Maps URL
+        locationName="Swabi Laundry and Dry Cleaning Service"
+      />
+        </div>
+        <div className={inter.className}>{children}</div>
+      </body>
     </html>
   );
 }

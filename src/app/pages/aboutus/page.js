@@ -1,15 +1,17 @@
-'use client'
 import Navbar from "@/components/Header";
 import Productpropcomponent from "./components/productprop";
 import Quote from "./components/quote";
 import React from "react";
 import ChoresComponent from "./components/chorecomponent";
 import AboveFooter from "@/components/abovefooter";
+export const metadata = {
+  title: "Swabi Laundry | About Us",
+  description: "About Us Page of Swabi Laundry",
+};
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div style={{marginTop:'150px'}}>
       <Productpropcomponent 
         image="/propimg2.jpg" // Update this path to where your image is stored

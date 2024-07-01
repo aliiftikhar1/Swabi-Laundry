@@ -1,15 +1,15 @@
+'use client'
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaTimes } from 'react-icons/fa';
-import 'tailwindcss/tailwind.css';
 
 const OfferDialog = ({ googleMapsUrl, locationName }) => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [rating, setRating] = useState(null);
   const [placeId, setPlaceId] = useState(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 1000);
+    const timer = setTimeout(() => setIsVisible(true), 30000); // 30 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -65,7 +65,7 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-80 z-50">
       <div className="relative bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out w-full max-w-4xl mx-4">
         <button
           onClick={handleClose}
@@ -76,9 +76,9 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 h-64 md:h-auto">
             <img
-              src="/simplevanimage.png"
+              src="/laundryvan2.jpeg"
               alt="Swabi Laundry Van"
-              className="object-cover w-full h-full"
+              className="object-fill w-full h-full"
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center p-8">

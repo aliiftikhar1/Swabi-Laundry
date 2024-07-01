@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { ArrowRight } from 'react-feather';
 
@@ -113,7 +114,7 @@ const PricingSection = () => {
     <div className="bg-gray-100 p-5 md:p-20 mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
-          <span className="text-pink-600 bg-pink-200 px-4 py-1 rounded">No 1 Laundry Service In Dubai</span>
+          {/* <span className="text-pink-600 bg-pink-200 px-4 py-1 rounded">No 1 Laundry Service In Dubai</span> */}
           <h2 className="text-3xl md:text-4xl font-bold underline mt-4">
             Fair Pricing<span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text"> Guaranteed</span>
           </h2>
@@ -124,7 +125,7 @@ const PricingSection = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {pricingData.map((category, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-4 md:p-6 flex flex-col justify-between transform transition-transform hover:scale-105 hover:bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200">
+            <div key={index} className="bg-white rounded-lg shadow-lg p-4 md:p-6 flex flex-col justify-between transform transition-transform hover:scale-105 hover:bg-blue-50">
               <div>
                 <div className="border-b-2 pb-2 mb-2">
                   <h3 className="text-xl md:text-2xl font-bold">{category.title}</h3>

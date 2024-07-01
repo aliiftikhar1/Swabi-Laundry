@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -12,7 +11,6 @@ const MobileNavbar = () => {
           <img src="/swabi logo.png" width={70} height={70} alt="Logo" />
           <img src="/swabi text.png" width={90} className="ml-2" alt="Text Logo" />
         </Link>
-        
       </div>
       <button
         className="menu-toggle focus:outline-none"
@@ -33,18 +31,12 @@ const MobileNavbar = () => {
       <div className={`absolute inset-x-0 top-full w-full bg-white shadow-lg z-40 transition-transform transform ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
         {isMobileMenuOpen && (
           <div className="flex flex-col space-y-4 p-4">
-            {/* <Link href="/how-it-works" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
-              How it works
-            </Link> */}
             <Link href="/" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
               Home
             </Link>
             <Link href="/pages/pricing" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
               Prices
             </Link>
-            {/* <Link href="/aboutus" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
-              About us
-            </Link> */}
             <Link href="/pages/offers" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
               Offers
             </Link>
@@ -54,9 +46,6 @@ const MobileNavbar = () => {
             <Link href="/pages/FAQpage" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
               FAQ
             </Link>
-            
-          
-           
           </div>
         )}
       </div>

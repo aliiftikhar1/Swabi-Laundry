@@ -1,16 +1,16 @@
-'use client'
 import AboveFooter from "@/components/abovefooter";
-import Navbar from "@/components/Header";
 import React from "react";
 import Businesscomponent from "./components/businessprop";
 import Ourservices from "./components/ourservices";
 import OrderForm from "@/components/orderform";
 
-
+export const metadata = {
+    title: "Swabi Laundry | Business Page",
+    description: "Business Page of Swabi Laundry",
+  };
 export default function Home(){
     return(
         <>
-        <Navbar/>
         <Businesscomponent
         image="/propimg3.jpg"
         name="Laundry Service For You!"
