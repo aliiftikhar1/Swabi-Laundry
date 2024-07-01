@@ -31,7 +31,8 @@ const DesktopNavbar = () => {
           </Link>
         </div>
         <div className="flex items-center space-x-1">
-          <div>
+          <div className='flex'>
+          <img src='/whatsappQRcode.png' width={70} className='p-1'></img>
             <img src='/whatsappicon.png' width={70} alt="WhatsApp Icon"></img>
           </div>
           <div className='flex flex-col w-[220px]'>
