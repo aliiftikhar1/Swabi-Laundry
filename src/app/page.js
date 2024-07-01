@@ -17,7 +17,7 @@ import WhatsAppButton from "@/components/whatsappbutton";
 
 export default function Home() {
   return (
-    <div className="w-full font-poppins">
+    <div className="w-full">
       <OfferDialog 
         googleMapsUrl="https://maps.app.goo.gl/owFNrAMn1L1z8WJHA" // Replace with your actual Google Maps URL
         locationName="Swabi Laundry and Dry Cleaning Service"

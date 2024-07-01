@@ -20,9 +20,6 @@ module.exports = {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
-      fontFamily: {
-        poppins: ["var(--font-poppins)"],
-      },
       filter: {
         'customBlue': 'invert(45%) sepia(100%) saturate(7000%) hue-rotate(182deg) brightness(94%) contrast(92%)',
       },
