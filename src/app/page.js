@@ -1,6 +1,4 @@
 // pages/index.js
-
-
 'use client'
 import About from "@/components/about";
 import AboveFooter from "@/components/abovefooter";
