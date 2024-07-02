@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Productpropcomponent = ({ image, icon, icon2, icondescription, icondescription2, benefit, title, description1, description2, description3, align }) => {
   return (
-    <div className={`flex flex-col items-center justify-center gap-6 p-6 md:p-10 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+    <div className={`flex flex-col justify-center gap-6 p-6 md:p-10 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
       <div className="flex-shrink-0 max-w-full md:max-w-[50%]">
         <img src={image} alt="Feature" className="w-full h-auto rounded-lg" />
       </div>

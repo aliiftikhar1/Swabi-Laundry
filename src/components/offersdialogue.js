@@ -78,12 +78,12 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
             <img
               src="/laundryvan2.jpeg"
               alt="Swabi Laundry Van"
-              className="object-fill w-full h-full"
+              className="object-cover md:p-0 p-4 w-full h-full"
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center p-8">
             <div className="flex flex-col items-center md:items-start mb-4">
-              <img src='/google.png' width={100} height={100} alt="Google Logo" className="mb-2" />
+              <img src='/google.png' width={100} height={100} alt="Google Logo" className="mb-2 " />
               <div className="flex items-center">
                 <span className="text-yellow-500 text-2xl md:text-3xl lg:text-4xl">★ ★ ★ ★ ★</span>
                 <span className="ml-2 text-xl md:text-2xl lg:text-3xl text-gray-700">

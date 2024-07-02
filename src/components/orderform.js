@@ -4,18 +4,13 @@ const OrderForm = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center min-h-screen bg-gray-100 p-4">
       <div className="max-w-xl lg:mr-10">
-        <h1 className="text-4xl lg:text-6xl font-bold md:mb-10 mb-5 text-left">Order Form</h1>
-        <h3 className="text-2xl font-bold md:mb-4 mb-1 p-3 md:p-0">Discover our laundry services designed to meet all of your needs.</h3>
-        <ul className="list-disc text-sm list-inside mb-4 p-3 md:p-0">
-          <li>HomeCare for your household linens</li>
-          <li>Clean & Press for a professional garment care experience</li>
-          <li>Wash & Fold for non-pressed items</li>
-          <li>Shoe Laundry Restore your shoes with our service</li>
-          <li>Press Only for clean clothes that require pressing</li>
-        </ul>
+        <h1 className="text-4xl font-bold mb-4">About Us</h1>
+        <p className="text-base md:text-lg">
+        Swabi Laundry offers premium laundry and dry cleaning services with free pickup and delivery. We provide professional care for all your garments, ensuring they are clean, fresh, and perfectly pressed. Our commitment to quality and customer satisfaction makes us your trusted choice for all your laundry needs.
+        </p>
       </div>
-      <div className="bg-white p-6 rounded-lg shadow-xl w-full lg:max-w-lg mb-8 lg:mb-0 ">
-        <h2 className="text-2xl font-bold mb-4">Pick Up & Delivery (100% Free)</h2>
+      <div className="bg-white p-6 rounded-lg shadow-xl w-full lg:max-w-lg mb-8 lg:mb-0">
+        <h2 className="text-2xl font-bold mb-4">Order Form</h2>
         <form>
           <div className="mb-3">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
@@ -95,7 +90,6 @@ const OrderForm = () => {
           </div>
         </form>
       </div>
-      
     </div>
   );
 };

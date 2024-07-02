@@ -16,13 +16,13 @@ const Businesscomponent = ({
   align
 }) => {
   return (
-    <div className={`flex flex-col mt-[90px] items-center justify-center gap-6 p-6 md:p-10 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+    <div className={`flex flex-col mt-[110px] justify-center gap-6 p-6 md:p-10 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
       <div className="flex-shrink-0 max-w-full md:max-w-[50%]">
         <img src={image} alt={name} className="w-full h-auto rounded-lg" />
       </div>
       <div className="flex flex-col gap-4 text-center md:text-left md:w-[50%]">
         <h2 className="text-xl md:text-2xl font-bold text-gray-600">{label}</h2>
-        <p className="text-2xl md:text-4xl font-semibold font-poppins">{name}</p>
+        <p className="text-2xl md:text-4xl font-semibold ">{name}</p>
         <div className="text-lg">
           <p className="text-base md:text-lg">{description}</p>
           <div className="flex items-center gap-4 mt-4 justify-center md:justify-start">

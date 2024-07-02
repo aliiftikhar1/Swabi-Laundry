@@ -12,14 +12,14 @@ const services = [
   
   const LaundryServices = () => {
     return (
-      <div className="text-center py-10 bg-white text-black px-4">
+      <div className="text-center py-5 bg-white text-black px-10">
         <h1 className="text-xl mb-6 font-semibold">What service do you choose today?</h1>
         <div className="grid grid-cols-4 md:grid-cols-8 gap-4 mx-auto ">
           {services.map((service) => (
             <a href="https://wa.me/971589920080" target="_blank" >
             <div
               key={service.name}
-              className="flex flex-col items-center h-full py-5 bg-gray-100 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-gray-200"
+              className="flex flex-col items-center h-full pb-5\ bg-white rounded-lg shadow-md transition-transform transform hover:scale-105 "
             >
               <img src={service.icon} alt={service.name} className="h-14 mb-2" />
               <p className="font-medium">{service.name}</p>

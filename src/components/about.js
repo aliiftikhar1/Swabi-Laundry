@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="slide-container text-white h-[auto] mb-10 bg-cover bg-blue-600 flex items-center justify-center">
+    <div className="slide-container text-white h-[auto] mb-10 bg-cover bg-blue-600 bg-opacity-70 flex items-center justify-center">
       <div className="text-center px-4 py-10 max-w-screen-md">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
         <p className="text-base md:text-lg">
