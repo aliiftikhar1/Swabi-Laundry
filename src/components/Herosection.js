@@ -42,7 +42,7 @@ const Hero = () => {
     return (
         <section className="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 pt-10 text-white mt-5 lg:mt-[110px]" style={{ backgroundColor: '#0890F1' }}>
             <div className="flex-1 lg:pr-12  order-2 lg:order-1 pb-4 ">
-                <h1 className="py-2 md:px-0 mb-2 text-white pl-4">
+                <h1 className="py-2 md:px-0 mb-2 text-white ">
                <span className='text-4xl font-bold lg:text-7xl '> Swabi Laundry </span><br />
                <span className='text-2xl font-semibold lg:text-4xl'>Premium Laundry & Dry Cleaning </span><br/>
                <span className='text-xl font-normal text-center lg:text-2xl'> Clean. Anywhere. Anytime. </span>
