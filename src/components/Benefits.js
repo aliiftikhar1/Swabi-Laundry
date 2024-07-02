@@ -5,7 +5,7 @@ const Benefits = () => {
   return (
     <div className='w-full items-center p-10'>
       <div className='w-full max-w-5xl mx-auto text-center py-5'>
-        <h1 className='text-4xl md:text-6xl text-black font-bold'>
+        <h1 className='text-3xl md:text-6xl text-black font-bold'>
           We collect, clean, and deliver your laundry and dry cleaning.
         </h1>
       </div>

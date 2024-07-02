@@ -4,7 +4,8 @@ import { FaSearch, FaClock, FaCreditCard } from 'react-icons/fa';
 export default function CardsComponent() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:p-6 mt-2">
-      <div className="bg-white rounded-lg border-[2px] border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-6 flex items-center">
+      <a href="https://wa.me/971589920080" target='blank'>
+      <div className="bg-white rounded-lg border-[2px] border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-6 flex h-[200px] md:h-[150px] items-center">
         <div className="bg-gray-200 rounded-full p-3 mr-4">
           <FaSearch className="text-green-500 text-3xl" />
         </div>
@@ -15,7 +16,9 @@ export default function CardsComponent() {
           </p>
         </div>
       </div>
-      <div className="bg-white rounded-lg border-[2px] border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-6 flex items-center">
+      </a>
+      <a href="https://wa.me/971589920080" target='blank'>
+      <div className="bg-white rounded-lg border-[2px] border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-6 flex  h-[200px] md:h-[150px] items-center">
         <div className="bg-gray-200 rounded-full p-3 mr-4">
           <FaClock className="text-green-500 text-3xl" />
         </div>
@@ -26,7 +29,9 @@ export default function CardsComponent() {
           </p>
         </div>
       </div>
-      <div className="bg-white rounded-lg border-[2px] border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-6 flex items-center">
+      </a>
+      <a href="https://wa.me/971589920080" target='blank'>
+      <div className="bg-white rounded-lg border-[2px] border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-6 flex  h-[200px] md:h-[150px] items-center">
         <div className="bg-gray-200 rounded-full p-3 mr-4">
           <FaCreditCard className="text-green-500 text-3xl" />
         </div>
@@ -37,6 +42,7 @@ export default function CardsComponent() {
           </p>
         </div>
       </div>
+      </a>
     </div>
   );
 }

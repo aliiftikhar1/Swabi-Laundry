@@ -1,20 +1,29 @@
+'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
 
 const MobileNavbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className="lg:hidden w-full p-3 flex justify-between items-center bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="flex items-center">
-        <Link href="/" aria-label="Homepage" className="flex items-center">
+        <Link href="/" aria-label="Homepage" className="flex items-center" onClick={closeMobileMenu}>
           <img src="/swabi logo.png" width={70} height={70} alt="Logo" />
           <img src="/swabi text.png" width={90} className="ml-2" alt="Text Logo" />
         </Link>
       </div>
       <button
         className="menu-toggle focus:outline-none"
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        onClick={toggleMobileMenu}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,19 +40,19 @@ const MobileNavbar = () => {
       <div className={`absolute inset-x-0 top-full w-full bg-white shadow-lg z-40 transition-transform transform ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
         {isMobileMenuOpen && (
           <div className="flex flex-col space-y-4 p-4">
-            <Link href="/" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
+            <Link href="/" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={closeMobileMenu}>
               Home
             </Link>
-            <Link href="/pages/pricing" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
+            <Link href="/pages/pricing" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={closeMobileMenu}>
               Prices
             </Link>
-            <Link href="/pages/offers" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
+            <Link href="/pages/offers" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={closeMobileMenu}>
               Offers
             </Link>
-            <Link href="/pages/businesspage" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
+            <Link href="/pages/businesspage" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={closeMobileMenu}>
               For business
             </Link>
-            <Link href="/pages/FAQpage" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg">
+            <Link href="/pages/FAQpage" className="nav-link hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={closeMobileMenu}>
               FAQ
             </Link>
           </div>
