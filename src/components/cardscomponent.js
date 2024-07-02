@@ -3,7 +3,7 @@ import { FaSearch, FaClock, FaCreditCard } from 'react-icons/fa';
 
 export default function CardsComponent() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 mt-2">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:p-6 mt-2">
       <div className="bg-white rounded-lg border-[2px] border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-6 flex items-center">
         <div className="bg-gray-200 rounded-full p-3 mr-4">
           <FaSearch className="text-green-500 text-3xl" />

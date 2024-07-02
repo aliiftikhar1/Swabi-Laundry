@@ -7,10 +7,10 @@ const AboveFooter = () => {
   const whatsappLink = "https://wa.me/971589920080";
 
   return (
-    <div className="container mt-[50px] px-8 lg:px-20 py-8">
+    <div className="container mt-[50px] px-8 lg:px-20 md:py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
         <div className="text-left">
-          <div className="space-y-4 pt-4">
+          <div className="space-y-4 md:pt-4">
             <a href="/" className="text-body-main flex">
               <img src='/swabi logo.png' className='w-[100px]'></img>
               <img src='/swabi text.png' className='w-[100px] h-[50px] my-auto'></img>

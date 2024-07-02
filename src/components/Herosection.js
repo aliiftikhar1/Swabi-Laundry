@@ -40,7 +40,7 @@ const Hero = () => {
     ];
 
     return (
-        <section className="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 pt-10 text-white mt-5 lg:mt-[110px]" style={{ backgroundColor: '#0890F1' }}>
+        <section className="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 pt-10 text-white mt-7 lg:mt-[110px]" style={{ backgroundColor: '#0890F1' }}>
             <div className="flex-1 lg:pr-12  order-2 lg:order-1 pb-4 ">
                 <h1 className="py-2 md:px-0 mb-2 text-white ">
                <span className='text-4xl font-bold lg:text-7xl '> Swabi Laundry </span><br />

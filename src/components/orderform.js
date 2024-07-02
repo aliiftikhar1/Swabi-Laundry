@@ -4,8 +4,8 @@ const OrderForm = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center min-h-screen bg-gray-100 p-4">
       <div className="max-w-xl lg:mr-10">
-        <h1 className="text-4xl font-bold mb-4">About Us</h1>
-        <p className="text-base md:text-lg">
+        <h1 className="text-4xl font-bold mb-4 text-center md:text-left">About Us</h1>
+        <p className="text-base md:text-lg p-2">
         Swabi Laundry offers premium laundry and dry cleaning services with free pickup and delivery. We provide professional care for all your garments, ensuring they are clean, fresh, and perfectly pressed. Our commitment to quality and customer satisfaction makes us your trusted choice for all your laundry needs.
         </p>
       </div>
