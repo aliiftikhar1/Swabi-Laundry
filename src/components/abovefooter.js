@@ -97,7 +97,7 @@ const AboveFooter = () => {
 
         <div>
           <div className="text-center">
-            <div className="flex flex-col items-center space-y-4">
+            <div className="flex md:flex-col flex-row justify-between items-center space-y-4">
               <img src="/customlogo/image.png" className="w-[100px] object-cover " alt="Women Owned Business Logo" />
               <img src="/customlogo/image1.png" className="w-[140px] object-contain" alt="Made in UAE Logo" />
             </div>
