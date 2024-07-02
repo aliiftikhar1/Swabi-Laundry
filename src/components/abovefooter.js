@@ -49,7 +49,7 @@ const AboveFooter = () => {
           </div>
         </div>
 
-        <div className="text-left ml-4">
+        <div className="text-left md:ml-4">
           <h5 className="text-xl font-semibold mb-4 ">Links</h5>
           <div className="space-y-2">
             <a href="/" className="text-body-main block hover:text-blue-500">Home</a>
