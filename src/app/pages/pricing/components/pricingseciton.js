@@ -115,7 +115,7 @@ const PricingSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
           {/* <span className="text-pink-600 bg-pink-200 px-4 py-1 rounded">No 1 Laundry Service In Dubai</span> */}
-          <h2 className="text-3xl md:text-4xl font-bold underline mt-4">
+          <h2 className="text-3xl md:text-4xl font-bold mt-4">
             Fair Pricing<span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text"> Guaranteed</span>
           </h2>
           <p className="mt-2 text-sm md:text-lg">In case your laundry price is lower, we will match it and offer 10% cashback on the order. Our mission is to offer you the best price without compromising quality and service.</p>
