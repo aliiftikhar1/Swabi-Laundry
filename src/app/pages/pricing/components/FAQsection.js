@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 const faqData = [
   {
     question: "Do you have a minimum charge?",
-    answer: "Yes, we do. The minimum invoice charged to the customer is AED 50. However, we do process orders below this amount. In such cases (where the order value is less than 50 AED) the customer is charged with the minimum invoice value."
+    answer: "We request to have a minimum order of AED 50. There are no other hidden charges - service or for hangars. However, we do process orders below this amount. In such cases (where the order value is less than 50 AED) the customer is charged with a convenience fee of AED 7."
   },
   {
     question: "Do you have any delivery fees?",
-    answer: "No. DipDap not only has ZERO delivery fees but also has no other hidden charges per order. There is, however, a minimum invoice charge of AED 50 per order."
+    answer: "No. Swabi Laundry not only has ZERO delivery fees but also has no other hidden charges per order. There is, however, a minimum order requirement of AED 50 per order."
   },
   {
     question: "How do I know how much my total order amount is?",
-    answer: "Once we collect your clothes, an itemized bill with the expected total order amount is generated. This bill will be shared with you via email and on the DipDap App. While the final bill amount will not vary a lot, there might be some difference based on the care label of each garment and your specified instructions."
+    answer: "Once we collect your clothes, an itemized bill with the expected total order amount is generated. This bill will be shared with you at the time of delivery or on request earlier."
   },
   {
     question: "How do I pay?",
-    answer: "DipDap has both cash & card (debit/credit) payment options. You can choose to pay the total order amount on the delivery of your items. In case you decide to pay via card, we will charge a nominal authorization amount of USD 1 (~3.67 AED) from you."
+    answer: "Swabi Laundry has all available payment options - cash, card (debit & credit), and payment links. You can choose to pay the total order amount on the delivery of your items."
   }
 ];
 

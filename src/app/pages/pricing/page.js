@@ -2,6 +2,8 @@ import React from "react";
 import FAQSection from "./components/FAQsection";
 import PricingSection from "./components/pricingseciton";
 import AboveFooter from "@/components/abovefooter";
+import Tag from "./components/tag";
+import PricingTag from "./components/tag2";
 
 export const metadata = {
   title: "Pricing | Swabi Laundry",
@@ -41,6 +43,7 @@ export default function Pricing() {
         <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} />
         <title>{metadata.title}</title>
       </head>
+      <PricingTag/>
       <PricingSection />
       <FAQSection />
       <AboveFooter />

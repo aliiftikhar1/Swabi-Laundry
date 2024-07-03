@@ -118,10 +118,10 @@ const PricingSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold underline mt-4">
             Fair Pricing<span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text"> Guaranteed</span>
           </h2>
-          <p className="mt-2 text-sm md:text-lg">We will match your current laundry bill and offer 10% lower prices. Our missing is to offer you the best price without compromising quality and service.</p>
+          <p className="mt-2 text-sm md:text-lg">In case your laundry price is lower, we will match it and offer 10% cashback on the order. Our mission is to offer you the best price without compromising quality and service.</p>
           <p className="mt-2 text-sm md:text-lg">We have <strong>clubbed</strong> your daily laundry items into <strong>6 categories</strong> to provide you with easy to navigate and pocket-friendly price options.</p>
           <p className="mt-2 text-sm md:text-lg"><strong>Pay a flat rate</strong> for all the items within your favorite category.</p>
-          <p className="mt-2 text-sm md:text-lg">Our minimum order value is AED 50. We are proud to inform that <strong>we don’t charge service fees</strong> or any other hidden fees.</p>
+          <p className="mt-2 text-sm md:text-lg">Our minimum order value is AED 50.No other service charges or hidden charges.</p>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {pricingData.map((category, index) => (

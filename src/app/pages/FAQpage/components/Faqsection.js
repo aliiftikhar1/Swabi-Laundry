@@ -6,34 +6,57 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "How should I prepare my clothes for pickup?",
-      answer: "Please ensure your clothes are separated by color and type (e.g., whites, darks) before pickup. You don't need to worry about sorting by fabric type, as our professionals will handle that for you."
+      question: "Can you remove the stain on my items?",
+      answer: "For dry cleaning items, our specialist dry cleaners use the highest quality equipment and industry-leading stain removal products. We cannot promise all stains will be removed, but we do promise we will do our best. Let us know in the app or tell our driver which items have stains you would like us to pay attention to."
     },
     {
-      question: "Do you provide eco-friendly laundry options?",
-      answer: "Yes, we offer eco-friendly detergents and methods upon request. These options are designed to reduce environmental impact without compromising on cleaning quality."
+      question: "Do you accept credit card payments?",
+      answer: "Yes. We accept all forms of payments - cash, credit card, and payment link."
     },
     {
-      question: "Can I customize the washing instructions for delicate items?",
-      answer: "Absolutely! You can specify any special instructions, such as delicate cycles, cold water wash, or air drying. Our team will ensure your instructions are followed meticulously."
+      question: "What should I prepare/do for my first pickup?",
+      answer: "Just have your clothes ready. Our driver will bring a laundry bag for you to place any loose items in. Alternatively, you can provide your own bag if preferred. If you have any special instructions for the care of your clothes, please include those details in the laundry bag. This will allow us to accommodate your specific needs."
     },
     {
-      question: "What measures do you take to ensure the safety of my clothes?",
-      answer: "We use secure processes and only trusted personnel handle your garments. Each item is tagged and tracked throughout its journey to and from our facilities to ensure security and accountability."
+      question: "Do I have to be home during pickup or drop off?",
+      answer: "No, not necessarily. You can leave your laundry bag outside your front door, or give them to your building's doorman if you have one. Many of our customers feel comfortable leaving their laundry this way. So you don't need to worry about your items being taken if you're not there when the driver arrives."
     },
     {
-      question: "What happens if an item is damaged or lost during the laundry process?",
-      answer: "While we take every precaution to handle your items with care, accidents can happen. In such rare cases, we have a comprehensive insurance policy that covers damages or loss. Please contact our customer support team immediately if you have any concerns."
+      question: "Can you hang/air dry items?",
+      answer: "Yes, we do. All clothes avoid high temperature dryer and go through our unique process. Put simply, they last longer and maintain texture for 30-50% longer than when put through machine dryers."
+    },
+    {
+      question: "What is the minimum charge?",
+      answer: "There is no minimum charge required by us."
+    },
+    {
+      question: "How will I know how much my order is?",
+      answer: "An itemized receipt will be shared once your order has been successfully delivered. If you disagree with something, please message us and we'll take care of it."
+    },
+    {
+      question: "Who chooses if my clothes will be washed or dry cleaned?",
+      answer: "Our team is well trained in choosing one of our 20+ cleaning programs, which are suitable for different types of fabrics. Our textile cleaning experts are trained to carefully read each item's care instructions and decide on the cleaning program."
+    },
+    {
+      question: "What is the turnaround time?",
+      answer: "Depends on the service requested.\n- Press Only: 24 hours\n- Wash & Iron: 48 hours\n- Dry Cleaning: 48 hours\n- Carpet/Blanket Cleaning: 72 hours\nYou can select same day delivery for a 50% surcharge fee."
+    },
+    {
+      question: "Do you offer carpet cleaning?",
+      answer: "Yes. We offer advanced machines to offer a premium carpet cleaning service."
+    },
+    {
+      question: "Do you offer free pick-up and delivery?",
+      answer: "Yes. We offer free pick-up and delivery across multiple service areas."
     }
   ];
-  
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-10 mt-5">
       <div className="text-center mb-8 md:mb-20">
         <span className="text-pink-600 bg-pink-200 px-4 py-1 rounded">Laundry Service In Dubai</span>
         <h2 className="text-4xl font-bold mt-4">FAQs <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">Laundry Service</span></h2>

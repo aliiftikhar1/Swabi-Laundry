@@ -16,9 +16,9 @@ const Businesscomponent = ({
   align
 }) => {
   return (
-    <div className={`flex flex-col mt-[110px] justify-center gap-6 p-6 md:p-10 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+    <div className={`flex flex-col mt-10 justify-center gap-10 p-6 md:px-40 md:py-10 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
       <div className="flex-shrink-0 max-w-full md:max-w-[50%]">
-        <img src={image} alt={name} className="w-full h-auto rounded-lg" />
+        <img src={image} alt={name} className="w-[700px] h-auto rounded-lg" />
       </div>
       <div className="flex flex-col gap-4 text-center md:text-left md:w-[50%]">
         <h2 className="text-xl md:text-2xl font-bold text-gray-600">{label}</h2>
