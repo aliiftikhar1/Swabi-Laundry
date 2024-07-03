@@ -65,13 +65,19 @@ const AboveFooter = () => {
             <h5 className="text-xl font-semibold mb-4">Follow Us</h5>
             <div className="flex justify-start gap-2 text-gray-800">
               <div className='hover:text-black'>
+
+                <a href='https://www.facebook.com/profile.php?id=100092439295566&mibextid=LQQJ4d'>
                 <FaFacebookF className="text-3xl" />
+                </a>
               </div>
               <div className='hover:text-black'>
+                <a></a>
                 <FaTwitter className="text-3xl" />
               </div>
               <div className='hover:text-black'>
+                <a href='https://www.instagram.com/swabi.laundry?igsh=MTB3cmF4azFtcGkzdA%3D%3D&utm_source=qr'>
                 <FaInstagram className="text-3xl" />
+                </a>
               </div>
               <div className='hover:text-black'>
                 <FaLinkedinIn className="text-3xl" />
