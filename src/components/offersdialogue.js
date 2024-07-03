@@ -21,11 +21,11 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
         if (data.placeId) {
           setPlaceId(data.placeId);
         } else {
-          setRating('N/A');
+          setRating('4.8');
         }
       } catch (error) {
         console.error('Error fetching place ID:', error);
-        setRating('N/A');
+        setRating('4.8');
       }
     };
 
@@ -76,9 +76,9 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 h-64 md:h-auto">
             <img
-              src="/laundryvan2.jpeg"
+              src="/newvan2.png"
               alt="Swabi Laundry Van"
-              className="object-cover md:p-0 p-4 w-full h-full"
+              className="md:object-cover object-contain md:p-0 p-4 w-full h-full"
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center p-8">
@@ -86,8 +86,8 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
               <img src='/google.png' width={100} height={100} alt="Google Logo" className="mb-2 " />
               <div className="flex items-center">
                 <span className="text-yellow-500 text-2xl md:text-3xl lg:text-4xl">★ ★ ★ ★ ★</span>
-                <span className="ml-2 text-xl md:text-2xl lg:text-3xl text-gray-700">
-                  {rating !== null ? `${rating} STAR` : 'Loading...'}
+                <span className="ml-2 text-xl md:text-2xl lg:text-3xl  text-gray-700">
+                 <strong> {rating !== null ? `${rating} Stars` : 'Loading...'}</strong>
                 </span>
               </div>
             </div>
