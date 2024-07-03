@@ -2,7 +2,7 @@ import React from 'react';
 
 function Tag() {
   return (
-    <div className="relative bg-cover bg-center bg-no-repeat h-[650px] md:h-screen mb-20 mt-20 " style={{ backgroundImage: 'url("/tag.jpg")' }}>
+    <div className="relative bg-cover bg-center bg-no-repeat h-[650px] md:h-screen mt-20 " style={{ backgroundImage: 'url("/tag.jpg")' }}>
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center ">
         <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight md:p-10">Welcome to Laundry Services</h1>
         <h2 className="text-2xl md:text-4xl font-bold text-white md:p-3">Convenient Pick Up & Delivery</h2>

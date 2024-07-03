@@ -111,7 +111,7 @@ const pricingData = [
 
 const PricingSection = () => {
   return (
-    <div className="bg-gray-100 p-5 md:p-20 mt-20">
+    <div className="bg-gray-100 p-5 md:p-20 ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
           {/* <span className="text-pink-600 bg-pink-200 px-4 py-1 rounded">No 1 Laundry Service In Dubai</span> */}
