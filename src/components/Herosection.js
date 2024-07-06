@@ -50,7 +50,7 @@ const Hero = () => {
                 <div className='bg-opacity-80 flex rounded pr-2'>
                     {features.map((feature, index) => (
                         <div key={index} className="flex items-center">
-                            <div className="flex flex-col items-center md:w-[200px] md:h-[120px] sm:w-[80px] h-full w-full text-center text-white">
+                            <div className="flex flex-col items-center md:w-[200px] md:h-[120px] sm:w-[80px] max-w-[100px] text-center text-white">
                                 <div className="mb-2">
                                     <img src={feature.icon} alt={feature.title} className='w-[50px] h-[50px] md:w-[70px] md:h-[70px]' />
                                 </div>
