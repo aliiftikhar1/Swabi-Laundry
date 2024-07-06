@@ -105,9 +105,11 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
               >
                 +971-585927959
               </a>
-              <button className="w-full md:w-auto text-base bg-gradient-to-r from-blue-400 to-blue-500 text-white font-bold py-2 px-4 rounded text-center hover:from-blue-500 hover:to-blue-600 transition-all duration-300">
+              <a href="https://wa.me/971589920080"  className="w-full md:w-auto text-base bg-gradient-to-r from-blue-400 to-blue-500 text-white font-bold py-2 px-4 rounded text-center hover:from-blue-500 hover:to-blue-600 transition-all duration-300">
+          
                 Order Now
-              </button>
+             
+              </a>
             </div>
           </div>
         </div>

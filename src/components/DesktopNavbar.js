@@ -36,7 +36,7 @@ const DesktopNavbar = () => {
             <img src='/whatsappicon.png' width={70} alt="WhatsApp Icon"></img>
           </div>
           <div className='flex flex-col w-[220px]'>
-            <Link href="https://wa.me/971589920080" target="_blank" rel="noopener noreferrer" className="text-left text-md">
+            <Link href="https://wa.me/971589920080" target="blank" rel="noopener noreferrer" className="text-left text-md">
               <strong>Schedule a free pickup now</strong>
               <br />
               +971 58 9920080
