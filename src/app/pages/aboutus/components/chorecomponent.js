@@ -10,9 +10,11 @@ const ChoresComponent = () => {
         <div className="text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Convenient Laundry Services</h2>
           <p className="text-lg text-blue-900 mb-6">Enter your address and schedule a pickup today</p>
+          <a href="https://wa.me/971589920080" target='blank'>
           <button className="bg-white text-blue-900 font-semibold py-2 px-6 rounded-md shadow-md hover:bg-blue-100">
             Schedule Pickup
           </button>
+          </a>
         </div>
       </div>
     </div>

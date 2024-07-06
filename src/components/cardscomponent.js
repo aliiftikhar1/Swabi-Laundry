@@ -3,9 +3,9 @@ import { FaSearch, FaClock, FaCreditCard } from 'react-icons/fa';
 
 export default function CardsComponent() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:p-6 mt-2">
-      <a href="https://wa.me/971589920080" target="_blank" rel="noopener noreferrer">
-        <div className="bg-white rounded-lg border-2 border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-4 flex items-center h-[180px] sm:h-[160px] lg:h-[150px]">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-0 md:p-6 mt-2">
+      <a href="https://wa.me/971589920080" target="blank" rel="noopener noreferrer">
+        <div className="bg-white rounded-lg border-2 border-solid shadow-black shadow-sm hover:shadow-black hover:shadow-md transition-shadow p-4 flex items-center h-[160px] sm:h-[160px] lg:h-[150px]">
           <div className="bg-gray-200 rounded-full p-3 mr-4">
             <FaSearch className="text-green-500 text-3xl" />
           </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 function Quote() {
   return (
-    <div className="relative bg-blue-500 h-[300px] md:h-[400px] mb-20">
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center">
+    <div className=" bg-blue-500 md:h-[400px] mb-20">
+      <div className=" bg-black py-10 bg-opacity-50 flex flex-col items-center justify-center text-center">
         <h1 className="text-3xl md:text-5xl font-bold text-white px-3 md:px-10 leading-tight">
           Fresh and Clean Laundry, Delivered to Your Doorstep
         </h1>

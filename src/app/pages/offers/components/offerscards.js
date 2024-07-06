@@ -3,7 +3,7 @@ import React from 'react';
 const Offerscards = ({ imageSrc, ctaText, isActive, onClick }) => {
   return (
     <div
-      className={`border rounded-lg overflow-hidden shadow-lg border-0 p-2 border-blue-600 transition-transform transform hover:scale-110 hover:shadow-2xl flex flex-col md:w-auto w-[400px] h-full`}
+      className={`border rounded-lg overflow-hidden shadow-lg border-0 p-2 border-blue-600 transition-transform transform hover:scale-110 hover:shadow-2xl flex flex-col md:w-auto h-full`}
       onClick={() => onClick(imageSrc, ctaText)}
     >
       <div className="relative">
