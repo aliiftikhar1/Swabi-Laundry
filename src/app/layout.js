@@ -14,6 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <script src="https://cdn.pagesense.io/js/857120722/960377c4792643299e637162cfdfbf05.js"></script>
+      </head>
       <body>
         <div className="fixed-navbar ">
           <Navbar />
