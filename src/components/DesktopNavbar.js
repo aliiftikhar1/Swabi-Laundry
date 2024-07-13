@@ -6,7 +6,7 @@ const DesktopNavbar = () => {
   return (
     <>
       <TopBar />
-      <div className="hidden lg:flex justify-between items-center w-full bg-white shadow-md fixed top-10 left-0 right-0 z-50 p-4">
+      <div className="hidden lg:flex justify-between items-center w-full bg-white shadow-md fixed top-10 left-0 right-0 z-40 p-4">
         <div className="flex items-center">
           <Link href="/" aria-label="Homepage" className="flex items-center">
             <img src="/swabi logo.png" width={70} height={70} className="ml-10 pb-1" alt="Logo" />

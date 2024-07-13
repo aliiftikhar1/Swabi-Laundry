@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Header";
 import WhatsAppButton from "@/components/whatsappbutton";
 import OfferDialog from "@/components/offersdialogue";
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-      <script src="https://cdn.pagesense.io/js/857120722/960377c4792643299e637162cfdfbf05.js"></script>
-      </head>
+      <GoogleTagManager gtmId="GT-WPL9D6WM"/>
       <body>
         <div className="fixed-navbar ">
           <Navbar />

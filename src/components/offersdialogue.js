@@ -16,7 +16,7 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
   useEffect(() => {
     const fetchPlaceId = async () => {
       try {
-        const response = await fetch(`/api/getrating?locationName=${encodeURIComponent(locationName)}`);
+        const response = await fetch(`/api/googlerating?locationName=${encodeURIComponent(locationName)}`);
         const data = await response.json();
         if (data.placeId) {
           setPlaceId(data.placeId);
@@ -46,6 +46,7 @@ const OfferDialog = ({ googleMapsUrl, locationName }) => {
         const data = await response.json();
         if (data.result && data.result.rating) {
           setRating(data.result.rating);
+          console.log(data.result.rating)
         } else {
           setRating('N/A');
         }
