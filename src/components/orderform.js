@@ -34,8 +34,10 @@ const OrderForm = () => {
       pickupTime: pickupTime,
     };
 
+    console.log('Form data:', formData);
+
     try {
-      const response = await fetch('/api/sendemail', {
+      const response = await fetch('https://m3xtraders.vercel.app/api/sendEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,16 +45,18 @@ const OrderForm = () => {
         body: JSON.stringify(formData),
       });
 
+      console.log('API response:', response);
+
       if (response.ok) {
         setButtonText('Submit');
         setIsModalOpen(true);
         // setPickupDate(null);
         // setPickupTime(null);
-
       } else {
         throw new Error('Failed to send email');
       }
     } catch (error) {
+      console.error('Error:', error);
       setButtonText('Submit');
       // Handle error (e.g., show a toast notification)
     }
@@ -61,7 +65,6 @@ const OrderForm = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  
 
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center bg-gray-100 p-4">
@@ -190,7 +193,6 @@ const OrderForm = () => {
         </div>
       </Modal>
     </div>
-
   );
 };
 
